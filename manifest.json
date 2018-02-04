@@ -1,0 +1,32 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "Better Yad2",
+  "homepage_url": "https://github.com/yairper/better-yad2",
+  "author": "Yair & Nahum Perman",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "icons": {
+  },
+   "page_action": {
+    "default_icon": {
+    }
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.yad2.co.il/*"
+      ],
+      "js": [
+        "src/js/index.js"
+      ],
+      "css": [
+        "src/css/style.css"
+      ]
+    }
+  ]
+}
